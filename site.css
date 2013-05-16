@@ -66,8 +66,10 @@ h6 {
 
 h1 {
   font-size:32px;
-  margin-bottom:20px;
+  margin:20px 0 20px 0;
   line-height:1em;
+  letter-spacing: 7px;
+  text-align: center;
   }
 
 h2 {
@@ -439,23 +441,26 @@ Details: http://www.positioniseverything.net/easyclearing.html
     }
   }
 
+/* --- map stuff --- */
+
+#map { position:absolute; top:0; bottom:0; width:100%; z-index:0;}
+
 /* --- custom stuff, will change to use fresh start rules --- */
 
+
   .banner {
+    background: transparent;
     text-align: center;
     margin: 0px auto;
     padding: 100px;
-    }
-  .title {
-    padding-top: 20px;
-    letter-spacing: 7px;
-    text-align: center;
-    font-size: 32px;
+    position: absolute;
+    z-index: 1;
     }
   .pages {
     text-align: center;
     letter-spacing: 2px;
     padding: 20px;
+    position: absolute;
     }
   .maps {
     font-size: 18px;
