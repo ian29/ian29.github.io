@@ -1,9 +1,14 @@
 ---
-layout: default 
+layout: blog
 section: blog 
 published: true 
 title: myblog
 ---
 
-this is the blog 
+this is the blog!!
 
+<div class='clearfix prose'>
+  {% for item in site.categories.blog limit:20 %}
+
+  {% endfor %}
+</div>

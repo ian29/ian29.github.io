@@ -443,7 +443,7 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 /* --- map stuff --- */
 
-#map { position:absolute; top:0; bottom:0; width:100%; z-index:0;}
+#map { position:absolute; top:0; bottom:0; width:100%; z-index:0; background-color: #222a2d;}
 
 /* --- custom stuff, will change to use fresh start rules --- */
 
@@ -463,4 +463,3 @@ Details: http://www.positioniseverything.net/easyclearing.html
     font-size: 18px;
     letter-spacing: 3px;
     }
-.links { color: #444;}
