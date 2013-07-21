@@ -3,24 +3,26 @@ layout: default
 title: untitled
 ---
 
-<div id='map'>
-	<div class="banner">
-		<h1>ian</h1>
-		<div class="pages">
-			<div class='maps'>
-				<a href='{{site.basurl}}/'>maps</a><br>.<br>
-				<a href='{{site.basurl}}/'>blog</a><br>.
-			</div>
-			<div class="links">
-				<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
-				<a href="https://github.com/ian29">gh</a>
-				<a href="http://www.openstreetmap.org/user/ian29">osm</a>
-			</div>
+<div id='map'></div>
+
+<div class="col12 banner">
+	<h1>ian</h1>
+	<div class="pages">
+		<div class='maps'>
+			<a href='{{site.basurl}}/maps/'>maps</a><br>.<br>
+			<a href='{{site.basurl}}/blog'>blog</a><br>.
+		</div>
+		<div class="links">
+			<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
+			<a href="https://github.com/ian29" target="_blank" >gh</a>
+			<a href="http://www.openstreetmap.org/user/ian29" target="_blank">osm</a>
 		</div>
 	</div>
 </div>
 
+
 <script type='text/javascript'>
 	var map = L.mapbox.map('map', 'villeda.map-jvnf1t2s', { zoomControl:false })
-		.setView([0, 0], 3);
+		.setView([11.87, -77.04], 4); // 4/11.87/-77.04
+	L.hash().init(map);
 </script>

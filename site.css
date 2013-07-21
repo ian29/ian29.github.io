@@ -22,7 +22,7 @@ time, mark, audio, video {
   font-size:100%;
   font:inherit;
   vertical-align:baseline;
-  background-color: #f5f4f0;
+  /*background-color: #f5f4f0;*/
   }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -101,10 +101,10 @@ a {
   text-decoration:none;
   }
   a:visited {
-    color:#9ed485;
+    color:darken(#f07, 20%;);
     }
   a:hover {
-    color:#54af29;
+    color:darken(#f07, 20%;);
     }
   a:active {
     color:#9ed485;
@@ -447,22 +447,20 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 /* --- custom stuff, will change to use fresh start rules --- */
 
-
   .banner {
-    background: transparent;
+    top: 200px;
     text-align: center;
     margin: 0px auto;
-    padding: 100px;
     position: absolute;
     z-index: 1;
+    color: #f5f4f0;
     }
-  .pages {
-    text-align: center;
+  .banner.pages {
     letter-spacing: 2px;
-    padding: 20px;
     position: absolute;
     }
   .maps {
     font-size: 18px;
     letter-spacing: 3px;
     }
+.links { color: #444;}
