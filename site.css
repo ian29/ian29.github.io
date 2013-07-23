@@ -69,7 +69,6 @@ h1 {
   margin:20px 0 20px 0;
   line-height:1em;
   letter-spacing: 7px;
-  text-align: center;
   }
 
 h2 {
@@ -100,11 +99,8 @@ a {
   color:#f07;
   text-decoration:none;
   }
-  a:visited {
-    color:darken(#f07, 20%;);
-    }
   a:hover {
-    color:darken(#f07, 20%;);
+    color:#fff;
     }
   a:active {
     color:#9ed485;
@@ -448,13 +444,23 @@ Details: http://www.positioniseverything.net/easyclearing.html
 /* --- custom stuff, will change to use fresh start rules --- */
 
   .banner {
-    top: 200px;
-    text-align: center;
+    /*text-align: center;/**/
+    height:100%;
     margin: 0px auto;
     position: absolute;
     z-index: 1;
     color: #f5f4f0;
+    background-color: rgba(0,0,0,.5);
     }
+  .banner h1 {
+    /* margin-top: 200px; /**/
+    font-family: 'Oswald', sans-serif;
+    font-size: 900%;
+    
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    opacity: .45;
+  }
   .banner.pages {
     letter-spacing: 2px;
     position: absolute;
