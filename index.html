@@ -1,24 +1,19 @@
 ---
 layout: default
-title: untitled
+title: mapachueco
 ---
 
 <div id='map'></div>
 <div class="col12 banner">
-	<h1>sonido el mapa</h1> 
-	<h1>
-	<ul>
-		<li><a href='{{site.basurl}}/maps/'>&#9760;maps</a></li>
-		<li><a href='{{site.basurl}}/blog'>&#9760;words</a></li>
-		<li><a href='{{site.basurl}}/about'>&#9760;about</a></li>
-	</ul>
+	<h1>mapa chueco
+		<a href='{{site.basurl}}/maps/'>&#9760;maps</a><br>
+		<a href='{{site.basurl}}/blog'>&#9760;words</a><br>
+		<a href='{{site.basurl}}/about'>&#9760;about</a><br>
 	</h1>
-	<div class="pages">
-		<div class="links">
-			<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
-			<a href="https://github.com/ian29" target="_blank" >gh</a>
-			<a href="http://www.openstreetmap.org/user/ian29" target="_blank">osm</a>
-		</div>
+	<div class="links">
+		<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
+		<a href="https://github.com/ian29" target="_blank" >gh</a>
+		<a href="http://www.openstreetmap.org/user/ian29" target="_blank">osm</a>
 	</div>
 </div>
 
@@ -26,7 +21,7 @@ title: untitled
 <script type='text/javascript'>
 
 var map = L.mapbox.map('map', 'villeda.logo', { zoomControl:false })
-	.setView([-5.35, -64.34], 4); //4/11.87/-77.04
+	.setView([-1.14, -84.11], 4); // 
 L.hash().init(map);
 
 //map.dragging.disable();

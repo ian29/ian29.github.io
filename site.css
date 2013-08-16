@@ -1,4 +1,4 @@
-/*  Reset ♥
+  /*  Reset ♥
     http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
@@ -100,10 +100,10 @@ a {
   text-decoration:none;
   }
   a:hover {
-    color:#fff;
+    color:#903;
     }
   a:active {
-    color:#9ed485;
+    color:#903;
     }
 
 abbr {
@@ -444,11 +444,7 @@ Details: http://www.positioniseverything.net/easyclearing.html
 /* --- custom stuff, will change to use fresh start rules --- */
 
   .banner {
-    margin: 0px auto;
-    position: absolute;
-    z-index: 1;
     color: #f5f4f0;
-    background-color: rgba(0,0,0,.5);
     }
   .banner h1 {
     /* margin-top: 200px; /**/
@@ -458,7 +454,7 @@ Details: http://www.positioniseverything.net/easyclearing.html
     letter-spacing: 20px;
     opacity: .45;
   }
-  .banner.pages {
+  .links {
     letter-spacing: 2px;
     position: absolute;
     }
