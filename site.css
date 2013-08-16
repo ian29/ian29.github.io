@@ -444,8 +444,6 @@ Details: http://www.positioniseverything.net/easyclearing.html
 /* --- custom stuff, will change to use fresh start rules --- */
 
   .banner {
-    /*text-align: center;/**/
-    height:100%;
     margin: 0px auto;
     position: absolute;
     z-index: 1;
@@ -456,7 +454,6 @@ Details: http://www.positioniseverything.net/easyclearing.html
     /* margin-top: 200px; /**/
     font-family: 'Oswald', sans-serif;
     font-size: 900%;
-    
     text-transform: uppercase;
     letter-spacing: 20px;
     opacity: .45;

@@ -5,7 +5,14 @@ title: untitled
 
 <div id='map'></div>
 <div class="col12 banner">
-	<h1>sondio el mapa <a href='{{site.basurl}}/maps/'>&#9760;maps</a><a href='{{site.basurl}}/blog'>&#9760;blog</a> cumbia </h1>
+	<h1>sonido el mapa</h1> 
+	<h1>
+	<ul>
+		<li><a href='{{site.basurl}}/maps/'>&#9760;maps</a></li>
+		<li><a href='{{site.basurl}}/blog'>&#9760;words</a></li>
+		<li><a href='{{site.basurl}}/about'>&#9760;about</a></li>
+	</ul>
+	</h1>
 	<div class="pages">
 		<div class="links">
 			<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
@@ -21,9 +28,10 @@ title: untitled
 var map = L.mapbox.map('map', 'villeda.logo', { zoomControl:false })
 	.setView([-5.35, -64.34], 4); //4/11.87/-77.04
 L.hash().init(map);
-map.dragging.disable();
-map.touchZoom.disable();
-map.doubleClickZoom.disable();
-map.scrollWheelZoom.disable();
+
+//map.dragging.disable();
+//map.touchZoom.disable();
+//map.doubleClickZoom.disable();
+//map.scrollWheelZoom.disable();
 
 </script>
