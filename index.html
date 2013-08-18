@@ -4,29 +4,31 @@ title: mapachueco
 ---
 
 <div id='map'></div>
-<div class="col12 banner">
-	<h1>mapa chueco
+<div class="banner">
+	<h1>mapa chueco</h1>
+	<p>maps and words from ian villeda</p>
+	<h2>
 		<a href='{{site.basurl}}/maps/'>&#9760;maps</a><br>
 		<a href='{{site.basurl}}/blog'>&#9760;words</a><br>
 		<a href='{{site.basurl}}/about'>&#9760;about</a><br>
-	</h1>
-	<div class="links">
+	</h2>
+	<p>
 		<a href="http://twitter.com/ian_villeda" target="_blank" >twitter</a>
 		<a href="https://github.com/ian29" target="_blank" >gh</a>
 		<a href="http://www.openstreetmap.org/user/ian29" target="_blank">osm</a>
-	</div>
+	</p>
 </div>
 
 
 <script type='text/javascript'>
 
-var map = L.mapbox.map('map', 'villeda.logo', { zoomControl:false })
+var map = L.mapbox.map('map', 'villeda.logo-light', { zoomControl:false })
 	.setView([-1.14, -84.11], 4); // 
 L.hash().init(map);
 
 //map.dragging.disable();
 //map.touchZoom.disable();
-//map.doubleClickZoom.disable();
+//map.doubleClickZoom.disable();	
 //map.scrollWheelZoom.disable();
 
 </script>

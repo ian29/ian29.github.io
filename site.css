@@ -62,6 +62,7 @@ h5,
 h6 {
   margin:0;
   font-weight:bold;
+  font-family: 'Oswald', sans-serif;
   }
 
 h1 {
@@ -69,10 +70,11 @@ h1 {
   margin:20px 0 20px 0;
   line-height:1em;
   letter-spacing: 7px;
+  text-transform: uppercase;
   }
 
 h2 {
-  font-size:28px;
+  font-size:64px;
   margin-bottom:20px;
   line-height:1.25em;
   }
@@ -90,8 +92,8 @@ h4, h5 {
   }
 
 p {
-  margin:0 0 20px;
-  }
+  margin:0 0 20px 0;
+  }   
   p:last-child { margin-bottom:0;}
 
 /* Links */
@@ -101,6 +103,7 @@ a {
   }
   a:hover {
     color:#903;
+    opacity: 1;
     }
   a:active {
     color:#903;
@@ -439,25 +442,23 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 /* --- map stuff --- */
 
-#map { position:absolute; top:0; bottom:0; width:100%; z-index:0; background-color: #222a2d;}
+#map { position:absolute; top:0; bottom:0; width:100%; z-index:-1; background-color: #222a2d;}
 
 /* --- custom stuff, will change to use fresh start rules --- */
 
   .banner {
-    color: #f5f4f0;
+    color: #444;
     }
   .banner h1 {
     /* margin-top: 200px; /**/
-    font-family: 'Oswald', sans-serif;
     font-size: 900%;
     text-transform: uppercase;
     letter-spacing: 20px;
-    opacity: .45;
+    color:#f07;
   }
-  .links {
-    letter-spacing: 2px;
-    position: absolute;
-    }
+  .banner a { color: #44444d; } 
+  .banner a:hover { color: #eb8f66; } 
+  .banner p { font-size: 120%; } 
   .maps {
     font-size: 18px;
     letter-spacing: 3px;
