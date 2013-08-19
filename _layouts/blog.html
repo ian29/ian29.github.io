@@ -4,8 +4,4 @@ layout: default
 
 <h2>{{page.title}}</h2>
 
-<div class='clearfix prose'>
-  {% for item in site.categories.blog limit:20 %}
-  <a href='{{site.baseurl}}/blog/'>{{page.title}}</a>
-  {% endfor %}
-</div>
+{{content}}
