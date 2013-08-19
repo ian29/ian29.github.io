@@ -44,7 +44,7 @@ body,
 input,
 textarea {
   color:#333;
-  font:15px/1.67 monospace, "Courier New", Courier;
+  font:15px/1.67 'PT Mono', monospace;
   -webkit-font-smoothing:antialiased;
   }
 *, *:after, *:before {
@@ -86,6 +86,8 @@ h3 {
 
 h4, h5 {
   font-size:24px;
+  font-family: 'PT Mono', monospace;
+  text-transform: uppercase;
   margin-bottom:0;
   line-height:1.67em;
   }
@@ -459,6 +461,7 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 .banner {
   color: #444;
+
   }
 .banner h1 {
   /* margin-top: 200px; /**/
