@@ -22,14 +22,13 @@ time, mark, audio, video {
   font-size:100%;
   font:inherit;
   vertical-align:baseline;
-  /*background-color: #f5f4f0;*/
   }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display:block;
   }
-body { line-height:1; }
+body { line-height:1; background-color: #edede6;}
 ol, ul { list-style:none;  }
 blockquote, q { quotes:none; }
 blockquote:before, blockquote:after,
@@ -98,11 +97,11 @@ p {
 
 /* Links */
 a {
-  color:#f07;
+  color:#f03;
   text-decoration:none;
   }
   a:hover {
-    color:#903;
+    color:#901;
     opacity: 1;
     }
   a:active {
@@ -442,7 +441,13 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 /* --- map stuff --- */
 
-#map { position:absolute; top:0; bottom:0; width:100%; z-index:-1; background-color: #222a2d;}
+#map { 
+  position:absolute;
+  top:0; bottom:0;
+  width:100%;
+  z-index:-1;
+}
+#map img { padding:20px; background-color: #edede6; }
 
 /* --- custom stuff, will change to use fresh start rules --- */
 
@@ -454,10 +459,10 @@ Details: http://www.positioniseverything.net/easyclearing.html
     font-size: 900%;
     text-transform: uppercase;
     letter-spacing: 20px;
-    color:#f07;
+    color:#f03;
   }
   .banner a { color: #44444d; } 
-  .banner a:hover { color: #eb8f66; } 
+  .banner a:hover { color: #f03; } 
   .banner p { font-size: 120%; } 
   .maps {
     font-size: 18px;
