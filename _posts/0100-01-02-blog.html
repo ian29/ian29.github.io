@@ -5,6 +5,15 @@ published: true
 title: unsolicited opinions
 ---
 
-unsolicited opinions
+<p>this will be the blog</p>
+
+<div class='clearfix prose'>
+  {% for item in site.categories.blog limit:20 %}
+  <h3>{{item.title}}</h3>
+  <hr>
+  {{ item.content | strip_md | truncatewords:75}}<br>
+  <a href='{{site.baseurl}}{{item.permalink}}'>&#9760; more mapa</a><br>
+  {% endfor %}
+</div>
 
 
