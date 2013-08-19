@@ -122,7 +122,7 @@ hr {
   margin:0 0 20px;
   border:0;
   height:1px;
-  background:#f8f8f8;
+  background:#f8f8f8; 
   }
 
 /* Block Quotes */
@@ -310,6 +310,7 @@ table {
 .container {
   max-width:1600px;
   margin:0 auto;
+  padding:20px 0 0 40px;
   overflow:hidden;
   }
 
@@ -450,8 +451,9 @@ Details: http://www.positioniseverything.net/easyclearing.html
   top:0; bottom:0;
   width:100%;
   z-index:-1;
+  background-color: #edede6;
 }
-/*#map img { padding:20px; background-color: #edede6; }*/
+/*#map img { padding:20px; }*/
 
 /* --- custom stuff, will change to use fresh start rules --- */
 

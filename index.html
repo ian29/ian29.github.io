@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: splash
 title: mapachueco
 ---
 
-<div id='map'></div>
-<div class="banner">
+
+<div class='banner'>
 	<h1>mapa chueco</h1>
 	<p>maps and words from ian villeda</p>
 	<h2>
@@ -20,15 +20,4 @@ title: mapachueco
 </div>
 
 
-<script type='text/javascript'>
 
-var map = L.mapbox.map('map', 'villeda.logo-light', { zoomControl:false })
-	.setView([-1.14, -84.11], 4); // 
-L.hash().init(map);
-
-//map.dragging.disable();
-//map.touchZoom.disable();
-//map.doubleClickZoom.disable();	
-//map.scrollWheelZoom.disable();
-
-</script>

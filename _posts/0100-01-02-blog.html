@@ -2,7 +2,7 @@
 layout: default
 section: blog 
 published: true 
-title: unsolicited opinions
+title: opiniones chuecos
 ---
 
 <h2>{{page.title}}</h2>
@@ -10,11 +10,11 @@ title: unsolicited opinions
 <p>this will be the blog</p>
 
 {% for item in site.categories.blog limit:20 %}
-  	<div class='clearfix prose container'>
+  	<div class='clearfix prose'>
   		<a class='quiet' href='{{site.baseurl}}{{item.permalink}}'>
   			<h3>{{item.title}}</h3>
-  			<hr>
-  			<p class='prose'>{{ item.content | strip_html | truncatewords:75}}</p>
+  			<hr class='prose'>
+  			<p class='prose'>{{ item.content | truncatewords:75}}</p>
   			&#9760;
   		</a>
 	</div>
