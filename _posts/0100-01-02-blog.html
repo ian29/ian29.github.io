@@ -1,19 +1,21 @@
 ---
-layout: blog
+layout: default
 section: blog 
 published: true 
 title: unsolicited opinions
 ---
 
+<h2>{{page.title}}</h2>
+
 <p>this will be the blog</p>
 
-<div class='clearfix prose'>
-  {% for item in site.categories.blog limit:20 %}
-  <h3>{{item.title}}</h3>
-  <hr>
-  {{ item.content | strip_md | truncatewords:75}}<br>
-  <a href='{{site.baseurl}}{{item.permalink}}'>&#9760; more mapa</a><br>
-  {% endfor %}
-</div>
-
-
+{% for item in site.categories.blog limit:20 %}
+  	<div class='clearfix prose container'>
+  		<a class='quiet' href='{{site.baseurl}}{{item.permalink}}'>
+  			<h3>{{item.title}}</h3>
+  			<hr>
+  			<p class='prose'>{{ item.content | strip_html | truncatewords:75}}</p>
+  			&#9760;
+  		</a>
+	</div>
+{% endfor %}
