@@ -282,6 +282,10 @@ table {
     }
 
 /* Read content styling */
+.prose {
+  width: 100%;
+  max-width: 600px;
+}
 .prose ul {
   list-style:disc;
   margin-left:40px;
@@ -447,24 +451,24 @@ Details: http://www.positioniseverything.net/easyclearing.html
   width:100%;
   z-index:-1;
 }
-#map img { padding:20px; background-color: #edede6; }
+/*#map img { padding:20px; background-color: #edede6; }*/
 
 /* --- custom stuff, will change to use fresh start rules --- */
 
-  .banner {
-    color: #444;
-    }
-  .banner h1 {
-    /* margin-top: 200px; /**/
-    font-size: 900%;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    color:#f03;
+.banner {
+  color: #444;
   }
-  .banner a { color: #44444d; } 
-  .banner a:hover { color: #f03; } 
-  .banner p { font-size: 120%; } 
-  .maps {
-    font-size: 18px;
-    letter-spacing: 3px;
-    }
+.banner h1 {
+  /* margin-top: 200px; /**/
+  font-size: 900%;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color:#f03;
+}
+.quiet { color: #44444d; }
+.quiet:hover { color: #f03; }
+.banner p { font-size: 120%; }
+.maps {
+  font-size: 18px;
+  letter-spacing: 3px;
+  }
