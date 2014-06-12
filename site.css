@@ -44,7 +44,7 @@ body,
 input,
 textarea {
   color:#333;
-  font:15px/1.67 'PT Mono', monospace;
+  font:15px/1.67 'Lato', monospace;
   -webkit-font-smoothing:antialiased;
   }
 *, *:after, *:before {
@@ -61,11 +61,12 @@ h5,
 h6 {
   margin:0;
   font-weight:bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   }
 
 h1 {
   font-size:32px;
+  font-family: 'Oswald', sans-serif;
   margin:20px 0 20px 0;
   line-height:1em;
   letter-spacing: 7px;
@@ -76,18 +77,20 @@ h2 {
   font-size:64px;
   margin-bottom:20px;
   line-height:1.25em;
+  font-weight: 400;
   }
 
 h3 {
   font-size:36px;
   margin-bottom:20px;
   line-height:1.5em;
+  font-weight: 100;
   }
 
 h4, h5 {
   font-size:24px;
-  font-family: 'PT Mono', monospace;
   font-weight: 100;
+  font-family: 'Lato', monospace;
   text-transform: uppercase;
   margin-bottom:0;
   line-height:1.67em;
@@ -95,7 +98,7 @@ h4, h5 {
 
 p {
   margin:0 0 20px 0;
-  }   
+  }
   p:last-child { margin-bottom:0;}
 
 /* Links */
@@ -313,7 +316,7 @@ table {
 .container {
   max-width:1600px;
   margin:0 auto;
-  padding:20px 0 0 40px;
+  padding: 40px 0 0 80px;
   overflow:hidden;
   }
 
@@ -449,7 +452,7 @@ Details: http://www.positioniseverything.net/easyclearing.html
 
 /* --- map stuff --- */
 
-#map { 
+#map {
   position:absolute;
   top:0; bottom:0;
   width:100%;
@@ -458,17 +461,24 @@ Details: http://www.positioniseverything.net/easyclearing.html
 }
 /*#map img { padding:20px; }*/
 
+#screen {
+  position:absolute;
+  top:0; bottom:0;
+  width:100%;
+  z-index:-1;
+  background-image: url(img/screen.svg);
+}
+
 /* --- custom stuff, will change to use fresh start rules --- */
 
 .banner {
   color: #444;
-
+  text-transform: uppercase;
+  /*font-size: 200%; */
   }
 .banner h1 {
   /* margin-top: 200px; /**/
-  font-size: 900%;
-  text-transform: uppercase;
-  letter-spacing: 20px;
+  letter-spacing: 15px;
   color:#f03;
 }
 .quiet { color: #44444d; }

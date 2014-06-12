@@ -8,31 +8,18 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
-  <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js'></script>
-  <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css' rel='stylesheet' />
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico|Oswald:400,700' rel='stylesheet' type='text/css'>
   <!--[if lte IE 8]>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.ie.css' rel='stylesheet' >
   <![endif]-->
 </head>
 <body>
-  <div id='map'></div>
+  <div id='map'>
+    <!-- <img src='img/screen.svg' width='100%' alt='screen'/> -->
+  </div>
   <div id='screen'></div>
   <div class='container'>
     {{content}}
   </div>
-  <script type='text/javascript'>
 
-  var map = L.mapbox.map('map', 'villeda.logo-light', { zoomControl:false })
-    .setView([-1.14, -84.11], 4); // 
-  L.hash().init(map);
-
-  //map.dragging.disable();
-  //map.touchZoom.disable();
-  //map.doubleClickZoom.disable();  
-  //map.scrollWheelZoom.disable();
-
-  </script>
-  <script src='{{site.baseurl}}/site.js'></script>
 </body>
