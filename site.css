@@ -4,14 +4,14 @@ input,
 textarea {
   color:#333;
   font:16px/1.67 'PT Serif', serif;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   margin: 25%;
   }
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  }
+
+/* no scrolling */
+body {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -30,8 +30,9 @@ p {
 
 /* Links */
 a {
-  color: #555;
+  color: #333;
   text-decoration:none;
+  font-weight: bold;
   }
   a:hover { color:#f06; }
 
@@ -40,5 +41,11 @@ hr {
 }
 
 .contact {
+  color: #999;
+}
+
+.contact a {
+  color: #999;
   font-size: 90%;
+  font-weight: normal;
 }
