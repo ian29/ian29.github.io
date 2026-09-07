@@ -4,19 +4,12 @@ input,
 textarea {
   color:#333;
   font:16px/1.67 'PT Serif', serif;
-  margin: 25%;
+  margin: 0 25%;
   }
 
-/* no scrolling */
-body {
+body.splash {
+  margin: 25%;
   overflow: hidden;
-}
-
-h1,
-h2,
-h3 {
-  font-size: 200%;
-  margin: 0;
   }
 
 p {
@@ -35,14 +28,4 @@ a {
 
 hr {
   border: 0.25px solid #777;
-}
-
-.contact {
-  color: #999;
-}
-
-.contact a {
-  color: #999;
-  font-size: 90%;
-  font-weight: normal;
 }
