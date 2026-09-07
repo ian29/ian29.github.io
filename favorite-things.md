@@ -1,7 +1,7 @@
 ---
 layout: default
 title: favorite-things
-permalink: /favorite-things
+permalink: /favorite-things.html
 ---
 
 Here are some of my favorite things:
