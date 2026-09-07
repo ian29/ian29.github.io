@@ -1,11 +1,14 @@
 {
   "name": "ian29.github.io",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.1.6"
   }
 }
